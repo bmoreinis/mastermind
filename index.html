@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="mastermind.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body cz-shortcut-listen="true">
+	<div id="console">
+    <div id="board" onclick="instructions()" class="">
+      <h1 id="title">Mastermind!</h1><p>Code Is Set up!<br><br>
+Pick four choices.
+ <span class="m">Magenta</span> quits.</p></div>
+	  <div id="makeGuess">
+  	  <ol id="colors" class="">
+	    	<li><select onchange="fourPicked(0)" id="0" class="w">
+	            <option value="r" class="r">r</option>
+	            <option value="g" class="g">g</option>
+	            <option value="c" class="c">c</option>
+	            <option value="y" class="y">y</option>
+	            <option value="b" class="b">b</option>
+	            <option value="w" class="w">w</option>
+				      <option value="m" class="m">q</option>
+              <option class="hide" selected=""></option>
+	          </select>
+	      	</li>
+	    	<li><select onchange="fourPicked(1)" id="1" class="w">
+	            <option value="r" class="r">r</option>
+	            <option value="g" class="g">g</option>
+	            <option value="c" class="c">c</option>
+	            <option value="y" class="y">y</option>
+	            <option value="b" class="b">b</option>
+	            <option value="w" class="w">w</option>
+              <option class="hide" selected=""></option>
+	          </select>
+	      	</li>
+	    	<li><select onchange="fourPicked(2)" id="2" class="w">
+	            <option value="r" class="r">r</option>
+	            <option value="g" class="g">g</option>
+	            <option value="c" class="c">c</option>
+	            <option value="y" class="y">y</option>
+	            <option value="b" class="b">b</option>
+	            <option value="w" class="w">w</option>
+              <option class="hide" selected=""></option>
+	          </select>
+	      	</li>
+	    	<li>
+			<select onchange="fourPicked(3)" id="3" class="w">
+              <option value="r" class="r">r</option>
+	            <option value="g" class="g">g</option>
+	            <option value="c" class="c">c</option>
+	            <option value="y" class="y">y</option>
+	            <option value="b" class="b">b</option>
+	            <option value="w" class="w">w</option>
+              <option class="hide" selected=""></option>
+	          </select>
+	      	</li>
+  	  	</ol>
+  	    <button id="submit-guess" onclick="newGetGuess(code)" class="fourok"></button>
+	</div>
+</div>
+<script language="javascript" type="text/javascript" src="webhelper.js"></script>
+<script language="javascript" type="text/javascript" src="average.js"></script>
+</body>
+</html>
